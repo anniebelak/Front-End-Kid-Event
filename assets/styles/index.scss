@@ -1,2 +1,38 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+.container-fluid{
+  background-color: #b0c4de;
+}
+
+#title {
+  text-align: center;
+  font-size: 40px;
+  color: navy;
+  font-family: monospace;
+}
+
+#sign-up{
+  text-align: center;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+#sign-in{
+  text-align: center;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+#sign-out {
+  text-align: center;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+#change-password{
+  text-align: center;
+  font-size: 12px;
+  font-family: monospace;
+  }
