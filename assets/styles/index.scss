@@ -2,8 +2,18 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
 
+
+
 .container-fluid{
   background-color: #b0c4de;
+  // background-image: https://imgur.com/a/86yWF
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+  color: navy;
+  font-family: monospace;
 }
 
 #title {
@@ -13,26 +23,54 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   font-family: monospace;
 }
 
-#sign-up{
+#title2 {
   text-align: center;
+  font-size: 40px;
+  color: navy;
+  font-family: monospace;
+}
+
+#sign-up{
+  // text-align: center;
   font-size: 12px;
   font-family: monospace;
 }
 
 #sign-in{
-  text-align: center;
+  // text-align: center;
   font-size: 12px;
   font-family: monospace;
 }
 
 #sign-out {
-  text-align: center;
+  // text-align: center;
   font-size: 12px;
   font-family: monospace;
+  border: clear;
 }
 
 #change-password{
-  text-align: center;
+  // text-align: center;
   font-size: 12px;
   font-family: monospace;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  }
+
+.column1 {
+  float: left;
+  width: 10%;
+  padding: 1px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+.row:after{
+  content: '';
+  display: table;
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+
   }
