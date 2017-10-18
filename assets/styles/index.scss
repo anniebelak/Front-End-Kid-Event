@@ -1,12 +1,24 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+//
+// body {
+//     background-image: url(“https://imgur.com/EigwKjR”);
+// }
 
-
+    // background-image: url('https://imgur.com/EigwKjR');
+    // header {
+    //   background: url('https://i.imgur.com/EigwKjR.jpg');
+    //   background-size: cover;
+    //   background-position: center;
+    //   height: 100vh;
+    // }
 
 
 .container-fluid{
-  background-color: #b0c4de;
-  // background-image: https://imgur.com/a/86yWF
+  background: url('https://i.imgur.com/EigwKjR.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 h2 {
@@ -66,7 +78,7 @@ h2 {
   margin-left: auto;
   }
 
-.row:after{
+.firstrow:after{
   content: '';
   display: table;
   clear: both;
