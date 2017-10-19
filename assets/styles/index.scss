@@ -24,14 +24,14 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 h2 {
   text-align: center;
   font-size: 25px;
-  color: navy;
+  color: #000000;
   font-family: monospace;
 }
 
 #title {
   text-align: center;
   font-size: 40px;
-  color: navy;
+  color: #000000;
   font-family: monospace;
 }
 
@@ -70,6 +70,11 @@ h2 {
   padding: 0;
   }
 
+#calendar{
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .column1 {
   float: left;
   width: 10%;
@@ -77,8 +82,8 @@ h2 {
   margin-right: auto;
   margin-left: auto;
   }
-
-.firstrow:after{
+//
+.firstrow:after {
   content: '';
   display: table;
   clear: both;
