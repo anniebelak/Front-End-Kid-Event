@@ -6,7 +6,10 @@ const config = require('./config')
 $(() => {
   setAPIOrigin(location, config)
 })
-
+const scriptsEvents = require('./events.js')
+$(() => {
+  scriptsEvents.addHandlers()
+})
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
