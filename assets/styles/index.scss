@@ -16,13 +16,22 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   margin-left: auto;
   margin-right: auto;
 }
-
-.container-fluid {
-  background: url('https://i.imgur.com/EigwKjR.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+.lead{
+  font-family: monospace;
+  font-size: 30px;
 }
+
+p{
+  font-family: monospace;
+  font-size: 30px;
+
+}
+// .container-fluid {
+//   background: url('https://i.imgur.com/EigwKjR.jpg');
+//   background-size: cover;
+//   background-position: center;
+//   height: 100vh;
+// }
 
 .calendar_container {
   margin-left: auto;
