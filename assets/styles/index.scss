@@ -1,20 +1,23 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-//
-// body {
-//     background-image: url(“https://imgur.com/EigwKjR”);
-// }
 
-    // background-image: url('https://imgur.com/EigwKjR');
-    // header {
-    //   background: url('https://i.imgur.com/EigwKjR.jpg');
-    //   background-size: cover;
-    //   background-position: center;
-    //   height: 100vh;
-    // }
+#create {
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+#get {
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.container-fluid{
+.container-fluid {
   background: url('https://i.imgur.com/EigwKjR.jpg');
   background-size: cover;
   background-position: center;
@@ -22,11 +25,12 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 }
 
 .calendar_container {
-margin-left: auto;
-margin-right: auto;
-max-width:1200px;
-height:800px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  height: 800px;
 }
+
 .column1{
   width: 169px;
   float:left;
@@ -50,7 +54,7 @@ h2 {
 
 #title {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: #000000;
   font-family: monospace;
 }
@@ -63,26 +67,26 @@ h2 {
 }
 
 #sign-up{
-  // text-align: center;
+  text-align: center;
   font-size: 12px;
   font-family: monospace;
 }
 
 #sign-in{
-  // text-align: center;
+  text-align: center;
   font-size: 12px;
   font-family: monospace;
 }
 
 #sign-out {
-  // text-align: center;
+  text-align: center;
   font-size: 12px;
   font-family: monospace;
   border: clear;
 }
 
 #change-password{
-  // text-align: center;
+  text-align: center;
   font-size: 12px;
   font-family: monospace;
   border: 0;
@@ -94,11 +98,3 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
-
-// .column1 {
-//   float:left;
-//   width: 10%;
-//   padding: 1px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   }
