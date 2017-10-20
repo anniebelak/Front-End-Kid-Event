@@ -53,12 +53,30 @@ const onChangePassword = function (event) {
 const updatePassword = function (event) {
   $('#change-password').show()
 }
+
+const onCreateSchedule = function (event) {
+  event.preventDefault()
+  debugger;
+  $('#create').show()
+  const data = getFormFields(this)
+  api.changePassword(data)
+    .then(ui.createScheduleSuccess)
+    .catch(ui.createScheduleFailure)
+}
+
 const addHandlers = () => {
   $('#sign-up').on('submit', onSignUp)
   $('#sign-in').on('submit', onSignIn)
   $('#sign-out').on('submit', onSignOut)
   $('#change-password').on('submit', onChangePassword)
   $('#passwordShow').on('click', updatePassword)
+  $('.table-responsive').hide()
+  $('#change-password').hide()
+  $('#sign-out').hide()
+  $('#get').hide()
+  $('#create').hide()
+  $('.container-fluid').show()
+  $('.events-form').on('submit', onCreateSchedule)
 }
 module.exports = {
   addHandlers

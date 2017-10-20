@@ -18,6 +18,9 @@ const signInSuccess = function (response) {
   $('#change-password').show()
   $('#sign-out').show()
   $('#sign-up').hide()
+  $('.table-responsive').show()
+  $('#get').show()
+  $('#create').show()
   // $('#password3').hide()
   // $('#password4').hide()
 }

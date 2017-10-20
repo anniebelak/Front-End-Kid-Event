@@ -24,7 +24,7 @@
     <div id='message'></div>
     <br>
     <br>
-      <h2 id= "title">THE FAMILY HUSTLE</h2>
+      <h2 id= "title">FAMILY HUSTLE</h2>
     <form id="sign-up">
       <fieldset>
         <legend>SIGN UP</legend>
@@ -85,27 +85,39 @@
                     </tr>
                 </thead>
                 <tbody>
-
+                  <form class="events-form" action="index.html" method="post">
                     <tr>
-                        <td class="agenda-date" class="active" rowspan="1">
+
+                        <td class="agenda-date active" rowspan="1">
                             <div class="dayofweek">SUNDAY</div>
                         </td>
                         <td class="Event">
-                            <textarea class="form-control" name= "event[event_name]" rows="5"> </textarea>
+                            <!-- <textarea class="form-control" name= "event[event_name]" rows="5"> </textarea> -->
+
+
+                              <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+
+                              <!-- <input type="submit" name="submit" value="SAVE"> -->
+                              <!-- <input type="submit" name="submit" value="EDIT">
+                              <input type="submit" name="submit" value="DELETE"> -->
+
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
 
-                                <textarea class="form-control" name= "stuff[s]"rows="5"></textarea>
+                                <!-- <textarea class="form-control" name= "stuff[s]"rows="5"></textarea> -->
+                                <input type="text" name="stuff[stuff]" placeholder="Stuff">
                             </div>
                               <input type="submit" name="submit" value="SAVE">
-                              <input type="submit" name="submit" value="EDIT">
-                              <input type="submit" name="submit" value="DELETE">
+                              <!-- <input type="submit" name="submit" value="EDIT">
+                              <input type="submit" name="submit" value="DELETE"> -->
                         </td>
+
                     </tr>
+                          </form>
                       <tr>
                         <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">Monday</div>
+                            <div class="dayofweek">MONDAY</div>
                         </td>
                         <td class="Event">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -122,7 +134,7 @@
                     </tr>
                       <tr>
                         <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">Tuesday</div>
+                            <div class="dayofweek">TUESDAY</div>
                         </td>
                         <td class="Event">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -139,7 +151,7 @@
                     </tr>
                       <tr>
                         <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">Wednesday</div>
+                            <div class="dayofweek">WEDNESDAY</div>
                         </td>
                         <td class="Event">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -156,7 +168,7 @@
                         </td>
                     </tr>
                     <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">Thursday</div>
+                            <div class="dayofweek">THURSDAY</div>
                         </td>
                         <td class="Event">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -173,7 +185,7 @@
                         </td>
                     </tr>
                     <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">Friday</div>
+                            <div class="dayofweek">FRIDAY</div>
                         </td>
                         <td class="Event">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
@@ -190,7 +202,7 @@
                         </td>
                     </tr>
                     <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">Saturday</div>
+                            <div class="dayofweek">SATURDAY</div>
                         </td>
                         <td class="Event">
                             <textarea class="form-control" rows="5" id="comment"></textarea>
