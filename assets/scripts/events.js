@@ -7,11 +7,13 @@ const ui = require('./ui')
 
 const onSignUp = function (event) {
   event.preventDefault()
+  console.log('help')
 
   const data = getFormFields(this)
   api.signUp(data)
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
+  console.log('data is', data)
   $('#email').val('')
   $('#password1').val('')
   $('#password2').val('')
@@ -30,7 +32,6 @@ const onSignIn = function (event) {
 
 const onSignOut = function (event) {
   event.preventDefault()
-
   api.signOut()
     .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
