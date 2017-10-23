@@ -67,7 +67,7 @@
     <p class="lead">
         Manage the chaos!
     </p>
-
+<div class="getEvents"></div>
     <div class="alert alert-warning">
         <p>When you are feeling lost remember who you are doing it for!</p>
     </div>
@@ -86,27 +86,30 @@
                 </thead>
                 <tbody>
                   <form class="events-form" action="index.html" method="post">
+                    <form class="events-patch" action="index.html" method="patch">
                     <!-- <tr> -->
 
                         <td class="agenda-date active" rowspan="1">
                             <div class="dayofweek">SUNDAY</div>
                         </td>
+                        <div>
                         <td class="Event">
 
 
-                              <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                              <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
 
-                                <textarea type="text" name="stuff[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                                <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
 
                             </div>
                               <input type="submit" name="submit" value="SAVE">
-                              <!-- <input type="submit" name="submit" value="EDIT">
-                              <input type="submit" name="submit" value="DELETE"> -->
                         </td>
+                      </div>
+                          <input type="submit" name="submit-edit" value="EDIT">
                           </form>
+                        </form>
                           <tbody>
                             <form class="events-form" action="index.html" method="post">
                               <tr>
@@ -114,11 +117,11 @@
                             <div class="dayofweek">MONDAY</div>
                         </td>
                         <td class="Event">
-                            <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                            <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
-                              <textarea type="text" name="stuff[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                            <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
                             </div>
                             <input type="submit" name="submit" value="SAVE">
                       </td>
@@ -130,11 +133,11 @@
                             <div class="dayofweek">TUESDAY</div>
                         </td>
                         <td class="Event">
-                              <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                              <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
-                              <textarea type="text" name="stuff[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                              <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
                             </div>
                             <input type="submit" name="submit" value="SAVE">
                       </td>
@@ -146,11 +149,11 @@
                             <div class="dayofweek">WEDNESDAY</div>
                         </td>
                         <td class="Event">
-                            <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                            <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
-                            <textarea type="text" name="stuff[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                            <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
                         </div>
                             <input type="submit" name="submit" value="SAVE">
                       </td>
@@ -162,12 +165,12 @@
                             <div class="dayofweek">THURSDAY</div>
                         </td>
                         <td class="Event">
-                        <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
 
-                                  <textarea type="text" name="stuff[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                                  <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
                             </div>
                             <input type="submit" name="submit" value="SAVE">
                       </td>
@@ -179,11 +182,11 @@
                             <div class="dayofweek">FRIDAY</div>
                         </td>
                         <td class="Event">
-                    <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                    <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
-                        <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                          <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
                             </div>
                             <input type="submit" name="submit" value="SAVE">
                       </td>
@@ -195,11 +198,11 @@
                             <div class="dayofweek">SATURDAY</div>
                         </td>
                         <td class="Event">
-                    <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                    <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
                         </td>
                         <td class="Stuff">
                             <div class="agenda-event">
-                          <textarea type="text" name="events[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                          <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
 
                             </div>
                             <input type="submit" name="submit" value="SAVE">

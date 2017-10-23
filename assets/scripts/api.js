@@ -42,10 +42,50 @@ const changePassword = function (data) {
     data
   })
 }
+
+const createEvent = function (data) {
+  console.log('data is ', data.event)
+  return $.ajax({
+    url: config.apiOrigin + '/events',
+    method: 'POST',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+const index = function (data) {
+  // console.log('data is ', data.event)
+  return $.ajax({
+    url: config.apiOrigin + '/events',
+    method: 'GET',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
+const deleteEvent = function (data) {
+  // console.log('data is ', data.event)
+  return $.ajax({
+    url: config.apiOrigin + '/events/' + data,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data
+  })
+}
+
 module.exports = {
   signUp,
   signIn,
   signOut,
-  changePassword
+  changePassword,
+  createEvent,
+  index,
+  deleteEvent
 
 }

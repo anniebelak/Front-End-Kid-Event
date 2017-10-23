@@ -1,5 +1,7 @@
+
 'use strict'
 const store = require('./store')
+const showEventsTemplate = require('./templates/events-listing.handlebars')
 
 const signUpSuccess = function (data) {
   $('#message').text('Signed up successfully')
@@ -53,6 +55,31 @@ const changePasswordSuccess = function (data) {
 const changePasswordFailure = function (error) {
   $('#message').text('Error on change password', error)
 }
+const createEventSuccess = function (data) {
+  console.log('createEvent data', data)
+  $('#message').text('Created new event successfully')
+  $('textarea').attr('readonly', 'readonly')
+}
+
+const createEventFailure = function (error) {
+  $('#message').text('Error no new event created', error)
+}
+
+const getEventsSucess = function (data) {
+  console.log('geteventssuccessdata is ', data)
+  $('#message').text('Here is your schedule!!')
+  const showEventsHTML = showEventsTemplate({ events: data.events })
+  $('.getEvents').html(showEventsHTML)
+}
+const getEventsFailure = function () {
+  $('#message').text('Get Schedule Failed')
+}
+
+// function textareaFunction (){
+// document.getElementById().disable = true;
+//
+// }
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
@@ -61,5 +88,9 @@ module.exports = {
   signOutSuccess,
   signOutFailure,
   changePasswordSuccess,
-  changePasswordFailure
+  changePasswordFailure,
+  createEventFailure,
+  createEventSuccess,
+  getEventsFailure,
+  getEventsSucess
 }

@@ -1,0 +1,12 @@
+{{#each events as |event|}}
+
+
+
+   <!-- Developers, why are we using data-id and not just id? -->
+   <ul data-id="{{event.id}}">
+     <li> <small>{{event_name}}</small></li>
+     <li> <small>{{stuff}}</small></li>
+      <li><button class="deleteEvents" type="click">DELETE</button></li>
+</ul>
+
+{{/each}}
