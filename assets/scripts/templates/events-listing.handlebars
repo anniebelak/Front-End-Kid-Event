@@ -4,12 +4,16 @@
 
    <!-- Developers, why are we using data-id and not just id? -->
    <ul data-id="{{event.id}}">
-     <textarea>{{event_name}}</textarea>
-     <textarea>{{stuff}}</textarea>
+     <form class = "edit-events">
+<input type="hidden" name="event[id]" value="{{event.id}}">
+     <textarea name="event[event_name]">{{event_name}}</textarea>
+     <textarea name="event[stuff]">{{stuff}}</textarea>
      <div>
       <button class="deleteEvents" type="click">DELETE</button>
     </div>
-      <button class="editEvents" type="submit">EDIT</button>
+      <input class="editEvents" type="submit" value="EDIT">
+    </form>
 </ul>
+
 
 {{/each}}

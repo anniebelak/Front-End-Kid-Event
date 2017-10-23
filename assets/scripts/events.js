@@ -80,11 +80,12 @@ const onDeleteEvent = function (event) {
     .catch(ui.deleteEvnetFailure)
 }
 const onUpdateEvent = function (event) {
+  const data = getFormFields(this)
   console.log(event)
-  const updateID = $(this).parent().parent().attr('data-id')
+  console.log('on update event data is', data.event)
+  // const updateID = $(this).parent().attr('data-id')
   event.preventDefault()
-  console.log(updateID)
-  api.updateEvent(updateID)
+  api.updateEvent(data)
     .then(ui.updateEventSuccess)
     .catch(ui.updateEventFailure)
 }
@@ -118,7 +119,7 @@ const addHandlers = () => {
   $('.getEvents').on('click', '.deleteEvents', onDeleteEvent)
   $('#done').on('click', onScheduleDone)
   $('#createNew').on('click', getNewSchedule)
-  $('.getEvents').on('submit', '.editEvents', onUpdateEvent)
+  $('.getEvents').on('submit', '.edit-events', onUpdateEvent)
 }
 module.exports = {
   addHandlers

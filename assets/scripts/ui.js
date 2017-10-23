@@ -83,8 +83,6 @@ const deleteEvnetFailure = function () {
 const updateEventSuccess = function (data) {
   console.log('geteventssuccessdata is ', data)
   $('#message').text('Updated successfully!!')
-  const showEventsHTML = showEventsTemplate({ events: data.events })
-  $('.getEvents').html(showEventsHTML)
 }
 const updateEventFailure = function () {
   $('#message').text('Get Update Failed')
