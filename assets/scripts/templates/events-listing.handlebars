@@ -4,9 +4,12 @@
 
    <!-- Developers, why are we using data-id and not just id? -->
    <ul data-id="{{event.id}}">
-     <li> <small>{{event_name}}</small></li>
-     <li> <small>{{stuff}}</small></li>
-      <li><button class="deleteEvents" type="click">DELETE</button></li>
+     <textarea>{{event_name}}</textarea>
+     <textarea>{{stuff}}</textarea>
+     <div>
+      <button class="deleteEvents" type="click">DELETE</button>
+    </div>
+      <button class="editEvents" type="submit">EDIT</button>
 </ul>
 
 {{/each}}

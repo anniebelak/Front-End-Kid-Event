@@ -20,7 +20,7 @@ const signInSuccess = function (response) {
   $('#change-password').show()
   $('#sign-out').show()
   $('#sign-up').hide()
-  $('.table-responsive').show()
+  $('.table-responsive').hide()
   $('#get').show()
   $('#create').show()
   // $('#password3').hide()
@@ -58,14 +58,13 @@ const changePasswordFailure = function (error) {
 const createEventSuccess = function (data) {
   console.log('createEvent data', data)
   $('#message').text('Created new event successfully')
-  $('textarea').attr('readonly', 'readonly')
 }
 
 const createEventFailure = function (error) {
   $('#message').text('Error no new event created', error)
 }
 
-const getEventsSucess = function (data) {
+const getEventsSuccess = function (data) {
   console.log('geteventssuccessdata is ', data)
   $('#message').text('Here is your schedule!!')
   const showEventsHTML = showEventsTemplate({ events: data.events })
@@ -74,11 +73,22 @@ const getEventsSucess = function (data) {
 const getEventsFailure = function () {
   $('#message').text('Get Schedule Failed')
 }
+const deleteEventSuccess = function () {
+  $('#message').text('Event successfully deleted!!')
+}
+const deleteEvnetFailure = function () {
+  $('#message').text('Delete Event Failed')
+}
 
-// function textareaFunction (){
-// document.getElementById().disable = true;
-//
-// }
+const updateEventSuccess = function (data) {
+  console.log('geteventssuccessdata is ', data)
+  $('#message').text('Updated successfully!!')
+  const showEventsHTML = showEventsTemplate({ events: data.events })
+  $('.getEvents').html(showEventsHTML)
+}
+const updateEventFailure = function () {
+  $('#message').text('Get Update Failed')
+}
 
 module.exports = {
   signUpSuccess,
@@ -92,5 +102,9 @@ module.exports = {
   createEventFailure,
   createEventSuccess,
   getEventsFailure,
-  getEventsSucess
+  getEventsSuccess,
+  deleteEvnetFailure,
+  deleteEventSuccess,
+  updateEventFailure,
+  updateEventSuccess
 }

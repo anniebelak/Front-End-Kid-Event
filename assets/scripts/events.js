@@ -67,7 +67,7 @@ const onCreateEvent = function (event) {
 const getEvents = function (event) {
   event.preventDefault()
   api.index()
-    .then(ui.getEventsSucess)
+    .then(ui.getEventsSuccess)
     .catch(ui.getEventsFailure)
 }
 const onDeleteEvent = function (event) {
@@ -76,18 +76,29 @@ const onDeleteEvent = function (event) {
   event.preventDefault()
   console.log(deleteID)
   api.deleteEvent(deleteID)
-    .then(ui.deleteEventSucess)
+    .then(ui.deleteEventSuccess)
     .catch(ui.deleteEvnetFailure)
 }
-// const onUpdateEvent = function (event) {
-//   debugger;
-//   event.preventDefault()
-//
-//   const data = getFormFields(this)
-//   api.updateEvent(data)
-//     .then(ui.updateEventSuccess)
-//     .catch(ui.updateEventFailure)
-// }
+const onUpdateEvent = function (event) {
+  console.log(event)
+  const updateID = $(this).parent().parent().attr('data-id')
+  event.preventDefault()
+  console.log(updateID)
+  api.updateEvent(updateID)
+    .then(ui.updateEventSuccess)
+    .catch(ui.updateEventFailure)
+}
+
+const onScheduleDone = function (event) {
+  $('.table-responsive').hide()
+  $('.form-control').val('')
+  $('#get').show()
+}
+
+const getNewSchedule = function (event) {
+  $('.table-responsive').show()
+  $('#get').hide()
+}
 
 const addHandlers = () => {
   $('#sign-up').on('submit', onSignUp)
@@ -105,6 +116,9 @@ const addHandlers = () => {
   // $('.events-patch').on('submit', onUpdateEvent)
   $('#get').on('click', getEvents)
   $('.getEvents').on('click', '.deleteEvents', onDeleteEvent)
+  $('#done').on('click', onScheduleDone)
+  $('#createNew').on('click', getNewSchedule)
+  $('.getEvents').on('submit', '.editEvents', onUpdateEvent)
 }
 module.exports = {
   addHandlers

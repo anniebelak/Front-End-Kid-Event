@@ -78,6 +78,17 @@ const deleteEvent = function (data) {
     data
   })
 }
+// const updateEvent = function (data) {
+//   // console.log('data is ', data.event)
+//   return $.ajax({
+//     url: config.apiOrigin + '/events/' + data,
+//     method: 'PATCH',
+//     headers: {
+//       Authorization: 'Token token=' + store.user.token
+//     },
+//     data
+//   })
+// }
 
 module.exports = {
   signUp,
@@ -87,5 +98,6 @@ module.exports = {
   createEvent,
   index,
   deleteEvent
+  // updateEvent
 
 }
