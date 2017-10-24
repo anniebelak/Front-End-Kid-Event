@@ -9,6 +9,30 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   margin-right: auto;
 }
 
+.delete-events{
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.edit-events {
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#done {
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #get {
   font-family: monospace;
   font-size: 12px;
@@ -16,7 +40,7 @@ $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
   margin-left: auto;
   margin-right: auto;
 }
-.lead{
+.lead {
   font-family: monospace;
   font-size: 30px;
   color: #000000;
@@ -50,13 +74,6 @@ p{
   background-color: #fcf8e3;
 }
 
-.containerHandler {
-  background-color: #fcf8e3;
-  float: left;
-}
-// .message{
-// width:200px;
-// }
 
 .stuff_container {
 clear: both;
@@ -67,25 +84,16 @@ margin-right: auto;
 h2 {
   text-align: center;
   font-size: 25px;
-  color: #000000;
+  color: #696969;
   font-family: monospace;
 }
 
 h3 {
-  // text-align: center;
   font-size: 30px;
-  color: #000000;
+  color: #a9a9a9;
   font-family: monospace;
 }
 
-#list {
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
-}
-#list1 {
-  float: left;
-}
 
 #title {
   text-align: center;
@@ -98,23 +106,19 @@ h3 {
 }
 
 
-#title2 {
-  text-align: center;
-  font-size: 40px;
-  color: navy;
-  font-family: monospace;
-}
-
 #sign-up{
   text-align: center;
   font-size: 12px;
   font-family: monospace;
+  color: #8a6d3b;
 }
 
 #sign-in{
   text-align: center;
   font-size: 12px;
   font-family: monospace;
+  color: #8a6d3b;
+
 }
 
 #sign-out {
@@ -133,7 +137,12 @@ h3 {
   padding: 0;
   }
 
-#calendar{
-  margin-right: auto;
-  margin-left: auto;
+#message{
+text-align: center;
+font-size: 15px;
+font-family: monospace;
 }
+// #calendar{
+//   margin-right: auto;
+//   margin-left: auto;
+// }

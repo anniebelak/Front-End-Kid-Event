@@ -100,6 +100,8 @@ const onScheduleDone = function (event) {
 const getNewSchedule = function (event) {
   $('.table-responsive').show()
   $('#get').hide()
+  $('#done').show()
+  $('.edit-events').hide()
 }
 
 const addHandlers = () => {
@@ -112,11 +114,12 @@ const addHandlers = () => {
   $('#change-password').hide()
   $('#sign-out').hide()
   $('#get').hide()
+  $('#done').hide()
   $('#createNew').hide()
   $('.container-fluid').show()
   $('.events-form').on('submit', onCreateEvent)
   $('#get').on('click', getEvents)
-  $('.getEvents').on('click', '.deleteEvents', onDeleteEvent)
+  $('.getEvents').on('click', '.delete-events', onDeleteEvent)
   $('#done').on('click', onScheduleDone)
   $('#createNew').on('click', getNewSchedule)
   $('.getEvents').on('submit', '.edit-events', onUpdateEvent)

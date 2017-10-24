@@ -23,8 +23,6 @@ const signInSuccess = function (response) {
   $('.table-responsive').hide()
   $('#get').show()
   $('#createNew').show()
-  // $('#password3').hide()
-  // $('#password4').hide()
 }
 
 const signInFailure = function (error) {
@@ -40,6 +38,9 @@ const signOutSuccess = function (data) {
   $('#change-password').hide()
   $('#get').hide()
   $('#createNew').hide()
+  $('.containerHandler').hide()
+  $('.table-responsive').hide()
+  $('#done').hide()
 }
 
 const signOutFailure = function (error) {
@@ -48,8 +49,6 @@ const signOutFailure = function (error) {
 
 const changePasswordSuccess = function (data) {
   $('#message').text('Changed password successfully')
-  // $('#password3').hide()
-  // $('#password4').hide()
   $('#password3').val('')
   $('#password4').val('')
 }
@@ -59,34 +58,33 @@ const changePasswordFailure = function (error) {
 }
 const createEventSuccess = function (data) {
   console.log('createEvent data', data)
-  $('#message').text('Created new event successfully')
+  $('#message').text('Added new happening successfully')
 }
 
 const createEventFailure = function (error) {
-  $('#message').text('Error no new event created', error)
+  $('#message').text('Error no new happening added', error)
 }
 
 const getEventsSuccess = function (data) {
-  console.log('geteventssuccessdata is ', data)
-  $('#message').text('Here is your schedule!!')
+  $('#message').text('Here is what happning and the stuff you need!!')
   const showEventsHTML = showEventsTemplate({ events: data.events })
   $('.getEvents').html(showEventsHTML)
 }
 const getEventsFailure = function () {
-  $('#message').text('Get Schedule Failed')
+  $('#message').text('Get What Happening  Failed')
 }
 const deleteEventSuccess = function () {
-  $('#message').text('Event successfully deleted!!')
+  $('#message').text('Happening successfully deleted, select GET EVENTS to see updated list!!')
 }
 const deleteEventFailure = function () {
-  $('#message').text('Delete Event Failed')
+  $('#message').text('Delete Failed')
 }
 
 const updateEventSuccess = function (data) {
-  $('#message').text('Updated successfully!!')
+  $('#message').text('Edit Successful')
 }
 const updateEventFailure = function () {
-  $('#message').text('Get Update Failed')
+  $('#message').text('Edit Failed')
 }
 
 module.exports = {
