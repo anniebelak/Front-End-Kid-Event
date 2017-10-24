@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kid-Event-Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+
+    <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+    <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+  </head>
+    <!-- <div class="image"> -->
+      <fieldset>
+        <br>
+        <br>
+    <br>
+    <br>
+  </fieldset>
+  <!-- </div> -->
+<body class="container-fluid">
+    <div id='message'></div>
+    <br>
+    <br>
+      <h2 id= "title">FAMILY HUSTLE</h2>
+    <form id="sign-up">
+      <fieldset>
+        <input id="email" type="text" name="credentials[email]" placeholder="Enter Email">
+        <input id="password1"type="text" name="credentials[password]"placeholder="Enter Password">
+        <input id="password2"type="text" name="credentials[password_confirmation]"placeholder="Enter Password Confirmatiom">
+        <input type="submit" name="submit" value="Sign up!">
+        </fieldset>
+    </form>
+    <div>
+    <form id="sign-in">
+      <fieldset>
+        <input id="sign-in-val" type="text" name="credentials[email]" placeholder="Enter Email">
+        <input id="sign-password"type="text" name="credentials[password]"placeholder="Enter Password">
+        <input type="submit" name="submit" value="Sign In!">
+        </fieldset>
+    </form>
+  <form id="sign-out">
+      <fieldset>
+      <input type="submit" name="submit" value="Sign out!">
+      </fieldset>
+  </form>
+  <div>
+    <form id="change-password">
+      <fieldset>
+        <input id="password3" type="text" name="passwords[old]" placeholder="Old Password">
+        <input id="password4" type="text" name="passwords[new]" placeholder="New Password">
+        <input type="submit" name="submit" value="Change PASSWORD!">
+        </fieldset>
+    </form>
+    <br>
+
+
+<div class="container">
+
+<input type="button" id="createNew" value="Add New Happenings">
+<input type="button" id="get" value="Get Whats Happening">
+
+<div class="getEvents"></div>
+    <div class="alert alert-warning">
+        <p>When you are feeling lost remember who you are doing it for!</p>
+    </div>
+
+    <hr />
+
+    <div class="agenda">
+        <div class="table-responsive">
+            <table class="table table-condensed table-bordered">
+                <thead>
+                    <tr>
+
+                        <th>Happenings</th>
+                        <th>Stuff</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <form class="events-form" action="index.html" method="post">
+                    <tr>
+                        </td>
+                        <div>
+                        <td class="Event">
+
+
+                              <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        </td>
+                        <td class="Stuff">
+                            <div class="agenda-event">
+
+                                <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
+
+                            </div>
+                              <input type="submit" name="submit" value="SAVE">
+                        </td>
+                      <!-- </div> -->
+                        </form>
+                          <tbody>
+                            <form class="events-form" action="index.html" method="post">
+                              <tr>
+                        </td>
+                        <td class="Event">
+                            <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        </td>
+                        <td class="Stuff">
+                            <div class="agenda-event">
+                            <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                            </div>
+                            <input type="submit" name="submit" value="SAVE">
+                      </td>
+                    </form>
+                        <tbody>
+                        <form class="events-form" action="index.html" method="post">
+                      <tr>
+
+                        </td>
+                        <td class="Event">
+                              <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        </td>
+                        <td class="Stuff">
+                            <div class="agenda-event">
+                              <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                            </div>
+                            <input type="submit" name="submit" value="SAVE">
+                      </td>
+                    </form>
+                    <tbody>
+                        <form class="events-form" action="index.html" method="post">
+                    <tr>
+
+                        </td>
+                        <td class="Event">
+                            <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        </td>
+                        <td class="Stuff">
+                            <div class="agenda-event">
+                            <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                        </div>
+                            <input type="submit" name="submit" value="SAVE">
+                      </td>
+                      </form>
+                      <tbody>
+                          <form class="events-form" action="index.html" method="post">
+                    </tr>
+
+                        </td>
+                        <td class="Event">
+                        <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        </td>
+                        <td class="Stuff">
+                            <div class="agenda-event">
+
+                                  <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                            </div>
+                            <input type="submit" name="submit" value="SAVE">
+                      </td>
+                    </form>
+                    <tbody>
+                      <form class="events-form" action="index.html" method="post">
+                      </tr>
+
+                        </td>
+                        <td class="Event">
+                    <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        </td>
+                        <td class="Stuff">
+                            <div class="agenda-event">
+                          <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
+                            </div>
+                            <input type="submit" name="submit" value="SAVE">
+                      </td>
+                         </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="button" id="done" value=" Happenings Complete">
+        </div>
+    </div>
+</div>
