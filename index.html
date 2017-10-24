@@ -11,14 +11,14 @@
     <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
     <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
   </head>
-    <div class="image">
+    <!-- <div class="image"> -->
       <fieldset>
         <br>
         <br>
     <br>
     <br>
   </fieldset>
-  </div>
+  <!-- </div> -->
 <body class="container-fluid">
     <div id='message'></div>
     <br>
@@ -26,7 +26,6 @@
       <h2 id= "title">FAMILY HUSTLE</h2>
     <form id="sign-up">
       <fieldset>
-        <!-- <legend>SIGN UP</legend> -->
         <input id="email" type="text" name="credentials[email]" placeholder="Enter Email">
         <input id="password1"type="text" name="credentials[password]"placeholder="Enter Password">
         <input id="password2"type="text" name="credentials[password_confirmation]"placeholder="Enter Password Confirmatiom">
@@ -36,7 +35,6 @@
     <div>
     <form id="sign-in">
       <fieldset>
-        <!-- <legend>SIGN IN</legend> -->
         <input id="sign-in-val" type="text" name="credentials[email]" placeholder="Enter Email">
         <input id="sign-password"type="text" name="credentials[password]"placeholder="Enter Password">
         <input type="submit" name="submit" value="Sign In!">
@@ -44,14 +42,12 @@
     </form>
   <form id="sign-out">
       <fieldset>
-      <!-- <legend>SIGN OUT</legend> -->
       <input type="submit" name="submit" value="Sign out!">
       </fieldset>
   </form>
   <div>
     <form id="change-password">
       <fieldset>
-        <!-- <legend>CHANGE PASSWORD</legend> -->
         <input id="password3" type="text" name="passwords[old]" placeholder="Old Password">
         <input id="password4" type="text" name="passwords[new]" placeholder="New Password">
         <input type="submit" name="submit" value="Change PASSWORD!">
@@ -61,11 +57,10 @@
 
 
 <div class="container">
-<!--
-<h2>The Hustle</h2> -->
+
 <input type="button" id="createNew" value="Add New Happenings">
 <input type="button" id="get" value="Get Whats Happening">
-  <!-- <input type="button" id="done" value=" Happenings Complete"> -->
+
 <div class="getEvents"></div>
     <div class="alert alert-warning">
         <p>When you are feeling lost remember who you are doing it for!</p>
@@ -85,11 +80,7 @@
                 </thead>
                 <tbody>
                   <form class="events-form" action="index.html" method="post">
-                    <!-- <form class="events-patch" action="index.html" method="patch"> -->
                     <tr>
-
-                        <!-- <td class="agenda-date" class="active" rowspan="1"> -->
-                            <!-- <div class="dayofweek">SUNDAY</div> -->
                         </td>
                         <div>
                         <td class="Event">
@@ -105,8 +96,7 @@
                             </div>
                               <input type="submit" name="submit" value="SAVE">
                         </td>
-                      </div>
-                          </form>
+                      <!-- </div> -->
                         </form>
                           <tbody>
                             <form class="events-form" action="index.html" method="post">
@@ -125,8 +115,7 @@
                         <tbody>
                         <form class="events-form" action="index.html" method="post">
                       <tr>
-                        <!-- <td class="agenda-date" class="active" rowspan="1"> -->
-                            <!-- <div class="dayofweek">TUESDAY</div> -->
+
                         </td>
                         <td class="Event">
                               <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
@@ -141,8 +130,7 @@
                     <tbody>
                         <form class="events-form" action="index.html" method="post">
                     <tr>
-                        <!-- <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">WEDNESDAY</div> -->
+
                         </td>
                         <td class="Event">
                             <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
@@ -157,8 +145,7 @@
                       <tbody>
                           <form class="events-form" action="index.html" method="post">
                     </tr>
-                    <!-- <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">THURSDAY</div> -->
+
                         </td>
                         <td class="Event">
                         <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
@@ -174,36 +161,17 @@
                     <tbody>
                       <form class="events-form" action="index.html" method="post">
                       </tr>
-                    <!-- <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">FRIDAY</div> -->
-                        </td>
-                        <td class="Event">
-                    <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
-                        </td>
-                        <td class="Stuff">
-                            <div class="agenda-event">
-                          <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
-                            </div>
-                            <input type="submit" name="submit" value="SAVE">
-                      </td>
-                    <!-- </form>
-                    <tbody>
-                        <form class="events-form" action="index.html" method="post">
-                    </tr>
-                    <td class="agenda-date" class="active" rowspan="1">
-                            <div class="dayofweek">SATURDAY</div>
-                        </td>
-                        <td class="Event">
-                    <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
-                        </td>
-                        <td class="Stuff">
-                            <div class="agenda-event">
-                          <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
 
+                        </td>
+                        <td class="Event">
+                    <textarea type="text" name="event[event_name]" placeholder="Events"  class="form-control" ></textarea>
+                        </td>
+                        <td class="Stuff">
+                            <div class="agenda-event">
+                          <textarea type="text" name="event[stuff]" placeholder="Stuff" class="form-control"></textarea>
                             </div>
                             <input type="submit" name="submit" value="SAVE">
                       </td>
-                    <!-- </form> -->
                          </form>
                         </td>
                     </tr>
