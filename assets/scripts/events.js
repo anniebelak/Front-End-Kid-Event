@@ -72,13 +72,14 @@ const getEvents = function (event) {
 }
 const onDeleteEvent = function (event) {
   console.log(event)
-  const deleteID = $(this).parent().parent().attr('data-id')
+  const deleteID = $(this).parent().parent().parent().parent().attr('data-id')
   event.preventDefault()
   console.log(deleteID)
   api.deleteEvent(deleteID)
     .then(ui.deleteEventSuccess)
     .catch(ui.deleteEvnetFailure)
 }
+
 const onUpdateEvent = function (event) {
   const data = getFormFields(this)
   console.log(event)
@@ -111,10 +112,9 @@ const addHandlers = () => {
   $('#change-password').hide()
   $('#sign-out').hide()
   $('#get').hide()
-  $('#create').hide()
+  $('#createNew').hide()
   $('.container-fluid').show()
   $('.events-form').on('submit', onCreateEvent)
-  // $('.events-patch').on('submit', onUpdateEvent)
   $('#get').on('click', getEvents)
   $('.getEvents').on('click', '.deleteEvents', onDeleteEvent)
   $('#done').on('click', onScheduleDone)

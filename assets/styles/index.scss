@@ -1,7 +1,7 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-#create {
+#createNew {
   font-family: monospace;
   font-size: 12px;
   text-align: center;
@@ -27,12 +27,12 @@ p{
   font-size: 30px;
 
 }
-// .container-fluid {
-//   background: url('https://i.imgur.com/EigwKjR.jpg');
-//   background-size: cover;
-//   background-position: center;
-//   height: 100vh;
-// }
+.container-fluid {
+  background: url('https://i.imgur.com/EigwKjR.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
 
 .calendar_container {
   margin-left: auto;
@@ -46,6 +46,14 @@ p{
   float:left;
 }
 
+.table-responsive {
+  background-color: #fcf8e3;
+}
+
+.containerHandler {
+  background-color: #fcf8e3;
+  float: left;
+}
 // .message{
 // width:200px;
 // }
@@ -55,6 +63,7 @@ clear: both;
 margin-left: auto;
 margin-right: auto;
 }
+
 h2 {
   text-align: center;
   font-size: 25px;
@@ -62,12 +71,32 @@ h2 {
   font-family: monospace;
 }
 
+h3 {
+  // text-align: center;
+  font-size: 30px;
+  color: #000000;
+  font-family: monospace;
+}
+
+#list {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+}
+#list1 {
+  float: left;
+}
+
 #title {
   text-align: center;
   font-size: 60px;
   color: #000000;
   font-family: monospace;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+  color: #8a6d3b;
 }
+
 
 #title2 {
   text-align: center;

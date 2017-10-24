@@ -22,7 +22,7 @@ const signInSuccess = function (response) {
   $('#sign-up').hide()
   $('.table-responsive').hide()
   $('#get').show()
-  $('#create').show()
+  $('#createNew').show()
   // $('#password3').hide()
   // $('#password4').hide()
 }
@@ -38,6 +38,8 @@ const signOutSuccess = function (data) {
   $('#sign-up').show()
   $('#sign-out').hide()
   $('#change-password').hide()
+  $('#get').hide()
+  $('#createNew').hide()
 }
 
 const signOutFailure = function (error) {
@@ -76,12 +78,11 @@ const getEventsFailure = function () {
 const deleteEventSuccess = function () {
   $('#message').text('Event successfully deleted!!')
 }
-const deleteEvnetFailure = function () {
+const deleteEventFailure = function () {
   $('#message').text('Delete Event Failed')
 }
 
 const updateEventSuccess = function (data) {
-  console.log('geteventssuccessdata is ', data)
   $('#message').text('Updated successfully!!')
 }
 const updateEventFailure = function () {
@@ -101,7 +102,7 @@ module.exports = {
   createEventSuccess,
   getEventsFailure,
   getEventsSuccess,
-  deleteEvnetFailure,
+  deleteEventFailure,
   deleteEventSuccess,
   updateEventFailure,
   updateEventSuccess
